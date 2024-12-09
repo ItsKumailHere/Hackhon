@@ -1,74 +1,142 @@
+"use client";
 import picture from "@/public/images/decle.png";
 import Image from "next/image";
 import img from "@/public/images/Rectangle1.png";
 import logo from "@/public/images/Meubel House_Logos-05.png";
 
+import { MapPin } from "lucide-react";
+import { Phone } from "lucide-react";
+import { Clock3 } from "lucide-react";
+
 export default function Contact() {
   return (
-    <div>
-      <div className="relative w-full h-[19.75rem]">
-        <Image
-          src={img}
-          alt="heroImage"
-          className="absolute
-    "
-        />
-        <div className="absolute z-10 w-full h-[19.75rem] ">
-          <h1 className=" text-gray-900 font-normal flex flex-col text-5xl mt-32 ml-[45%] w-[100%] h-[100%] ">
-            <Image src={logo} alt="logo" />
-            Shop
-          </h1>
-        </div>
+    <main className="" id="contact">
+      <div className="h-screen flex ">
+        <div
+          className="h-[30%]  w-full bg-cover bg-center"
+          style={{ backgroundImage: "url('../public/images/Rectangle1.png')" }}
+        ></div>
       </div>
-      <div className="mt-20 w-full ">
-        <div className="w-full flex justify-center items-center text-center flex-col">
-          <h2 className="text-gray-950 font-semibold text-3xl">
-            Get In Touch With Us
-          </h2>
-          <p className="text-gray-400 font-light text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            ipsum cupiditate! Est dolor corporis neque quia sint officiis
-            doloribus suscipit perspiciatis impedit aliquid.
-          </p>
-        </div>
-        <div className="grid grid-cols-2 grid-rows-1">
-          <div className="col-span-1 flex flex-col w-[100%] items-center justify-center">
-            <div className="text-gray-900 flex flex-col gap-2">
-              <h3 className="text-xl font-medium mb-7">Address</h3>
-              <p className="text-lg font-normal text-gray-950">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
-                pariatur assumenda nisi.
-              </p>
-            </div>
-            <div className="text-gray-900 flex flex-col gap-2">
-              <h3 className="text-xl font-medium mb-7">Phone</h3>
-              <p className="text-lg font-normal text-gray-950">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
-                pariatur assumenda nisi.
-              </p>
-            </div>
-            <div className="text-gray-900 flex flex-col gap-2">
-              <h3 className="text-xl font-medium mb-7">Working Time</h3>
-              <p className="text-lg font-normal text-gray-950">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
-                pariatur assumenda nisi.
+      <div className="  flex items-center justify-center ">
+        <h1 className="text-4xl  font-semibold mt-[3000px] text-black absolute top-72 font-poppins ">
+          Get In Touch With Us
+        </h1>
+        <p className="text-lg mt-[3000px] text-gray-400 font-normal font-poppins absolute top-[340px] max-w-3xl text-center">
+          For More Information About Our Product & Services. Please Feel Free To
+          Drop Us An Email Our Staff Always Be There To Help You Out. Do Not
+          Hesitate!
+        </p>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center md:space-x-12">
+        {/* Contact Info Section */}
+        <div className="flex-1 mx-60 -mt-64 ">
+          <div className="mb-4">
+            <MapPin className="inline-block text-3xl  mr-2 -mx-11 text-black" />
+            <div>
+              <h2 className=" font-bold text-gray-900 text-2xl">Address</h2>
+              <p className=" font-medium text-black w-48 mt-1">
+                236 5th Avenue, New York NY10000, United States
               </p>
             </div>
           </div>
-          <div className="col-span-1 flex flex-col w-[100%] items-center justify-center">
-            <h4 className="text-gray-900 text-sm font-normal flex flex-col gap-5 mb-4">Your Name</h4>
-            <input type="text" name="" id="" placeholder="Abc" className="focus:outline-none"/>
-            <h4 className="text-gray-900 text-sm font-normal flex flex-col gap-5 mb-4">Email Address</h4>
-            <input type="text" name="" id="" placeholder="Abc@def.com" className="focus:outline-none"/>
-            <h4 className="text-gray-900 text-sm font-normal flex flex-col gap-5 mb-4">Subject</h4>
-            <input type="text" name="" id="" placeholder="optional" className="focus:outline-none"/>
-            <h4 className="text-gray-900 text-sm font-normal flex flex-col gap-5 mb-4">Message</h4>
-            <input type="text" name="" id="" placeholder="Hey! I'd like to ask about" className="focus:outline-none"/>
-            <button className="font-light text-white text-base py-2 px-6 rounded-md">Submit</button>
+          <div className="mb-4 mt-5">
+            <Phone className="inline-block text-3xl -mx-11 mr-2 text-black" />
+            <div>
+              <h2 className=" font-bold text-gray-900 text-2xl">Phone</h2>
+              <p className=" text-black mt-1 font-medium">
+                Mobile: +(84) 546-6789
+              </p>
+              <p className=" text-black mt-1 font-medium">
+                Hotline: +(84) 456-6789
+              </p>
+            </div>
+            <div className="mb-4 mt-5">
+              <Clock3 className="inline-block  -mx-11 text-3xl mr-2 text-black" />
+              <div>
+                <h2 className=" font-bold text-gray-900 text-2xl">
+                  Working Time
+                </h2>
+                <p className=" text-black mt-1 font-medium">
+                  Monday-Friday: 9:00- 22:00
+                </p>
+                <p className=" text-black mt-1 font-medium">
+                  Saturday-Sunday: 9:00-21:00
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <Image src={picture} alt="an image" className="w-full -mb-5" />
-    </div>
+
+      <div className="flex-1 w-[600px] float-right mr-40 -mt-[430px] ">
+        <form className="space-y-4">
+          <div>
+            <label htmlFor="name" className="block mb-2">
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="w-full p-2 rounded bg-white border border-gray-600 focus:outline-none "
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block mb-2">
+              Email address
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full p-2 rounded bg-white border border-gray-600 focus:outline-none focus:border-customBlue"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="subject" className="block mb-2">
+              Subject
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={2}
+              className="w-full p-2 rounded bg-white border border-gray-600 focus:outline-none focus:border-customBlue"
+              placeholder="Enter Your Message"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block mb-2">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={3}
+              className="w-full p-2 rounded bg-white border border-gray-600 focus:outline-none focus:border-customBlue"
+              placeholder="Enter Your Message"
+              required
+            />
+          </div>
+          <div className="py-5">
+            <button
+              type="submit"
+              className=" text-white h-11 bg-yellow-700 w-36 "
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <Image src={picture} alt="an image" className="w-full" />
+    </main>
   );
 }

@@ -15,7 +15,7 @@ export const productData = [
   },
   {
     src: img2,
-    alt: "ProductImage",
+    alt: "ProductImage", 
     rp: "1,500,000",
   },
   {

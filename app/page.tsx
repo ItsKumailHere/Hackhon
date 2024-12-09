@@ -42,14 +42,14 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Laudantium provident quas sapiente
             </p>
-            <button className="bg-primary p-5 mt-3 text-background font-semibold w-[13.875rem]">
+            <button className="bg-primary p-5 mt-3 text-white rounded-md font-semibold w-[13.875rem]">
               Buy Now
             </button>
           </div>
         </div>
       </div>
       <div className="w-full flex justify-center flex-col mt-16">
-        <div className="text-center font-bold tracking-wide text-2xl flex flex-col">
+        <div className="text-center font-bold tracking-wide text-2xl flex flex-col"> 
           Browse The Range
           <p className="text-base font-normal text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
