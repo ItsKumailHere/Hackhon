@@ -1,8 +1,6 @@
 "use client";
 import picture from "@/public/images/decle.png";
 import Image from "next/image";
-import img from "@/public/images/Rectangle1.png";
-import logo from "@/public/images/Meubel House_Logos-05.png";
 
 import { MapPin } from "lucide-react";
 import { Phone } from "lucide-react";
