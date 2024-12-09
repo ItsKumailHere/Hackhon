@@ -6,7 +6,7 @@ import { ProductOptions } from "./product-options"
 import { ProductMeta } from "./product-meta"
 import { ProductTabs } from "./product-tabs";
 
-interface CartProps {
+type CartProps = {
   title?: string;
   price?: number;
   rating?: number;
